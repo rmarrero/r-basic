@@ -83,6 +83,8 @@ sin(60*pi/180)
 
 cos(60*pi/180)
 
+cos(60) #formula erronea, ver linea 84 ya que hay que pasarlo a radianes.
+
 sinpi(1/2) # = sin (pi/2)
 
 tan(pi) # -1.224647e-16 ~ 0
