@@ -139,9 +139,9 @@ y
 sin(pi/4) + cos(pi/4) -> z
 z
 
-edad <- 30
+edad <- 45
 
-nombre = "Juan Gabriel"
+nombre = "Ricardo Marrero Carrión"
 
 HOLA = 1
 hola = 5
