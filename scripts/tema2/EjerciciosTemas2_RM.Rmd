@@ -14,12 +14,26 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## R Markdown
 
-Pruebas de formulas
+# Pruebas de formulas
 
 2 + 2 = 4
 
 $\frac{2}{3}$
 
 
+$\frac{2^{3}}{4}$
 
+$\sum_{i=0}^{n}$
+
+Esta es una prueba de **resaltar ** una palabra.
+
+$\sqrt[3]{6}$
+
+La $\sqrt[2][4]$ es 2
+
+$$\begin{pmatrix} a_{11} & a_{12} & a_{13}\\ a_{21} & a_{22} & a_{23} \end{pmatrix}$$
+
+$$\begin{bmatrix} a_{11} & a_{12} & a_{13}\\ a_{21} & a_{22} & a_{23} \end{bmatrix}$$
+
+$$\begin{Bmatrix} a_{11} & a_{12} & a_{13}\\ a_{21} & a_{22} & a_{23} \end{Bmatrix}$$
 
