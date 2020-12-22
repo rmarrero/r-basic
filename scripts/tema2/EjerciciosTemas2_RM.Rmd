@@ -1,0 +1,25 @@
+---
+title: "PruemaTema2_RM"
+author: "Ricardo Marrero"
+date: "22/12/2020"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+Pruebas de formulas
+
+2 + 2 = 4
+
+$\frac{2}{3}$
+
+
+
+
