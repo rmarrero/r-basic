@@ -1,0 +1,32 @@
+---
+title: "R & Phyton (RM)"
+author: "Ricardo Marrero"
+date: "23/12/2020"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Librería RETICULATE
+
+```{r}
+library(reticulate)
+use_python("/Users/ramc/opt/anaconda3/bin/python3")
+
+os <- import("os")
+os$listdir(".")
+```
+
+```{r scriptphyton}
+source_python("add.py")
+add(3,4)
+```
+
+
+
+
