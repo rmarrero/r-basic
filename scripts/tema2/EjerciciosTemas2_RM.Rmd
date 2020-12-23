@@ -37,3 +37,16 @@ $$\begin{bmatrix} a_{11} & a_{12} & a_{13}\\ a_{21} & a_{22} & a_{23} \end{bmatr
 
 $$\begin{Bmatrix} a_{11} & a_{12} & a_{13}\\ a_{21} & a_{22} & a_{23} \end{Bmatrix}$$
 
+### Ejemplos de Chunks
+
+Vamos a calcular la $\sqrt{2} - e^{-2}$:
+```{r ChunkRaizCuadrada, echo=FALSE, comment=NA}
+sqrt(2) - exp(2)
+```
+
+```{r magic, echo=FALSE, message=FALSE, comment=NA}
+library(magic)
+magic(6)
+```
+
+
