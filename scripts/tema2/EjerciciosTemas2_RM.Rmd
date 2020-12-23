@@ -40,6 +40,7 @@ $$\begin{Bmatrix} a_{11} & a_{12} & a_{13}\\ a_{21} & a_{22} & a_{23} \end{Bmatr
 ### Ejemplos de Chunks
 
 Vamos a calcular la $\sqrt{2} - e^{-2}$:
+
 ```{r ChunkRaizCuadrada, echo=FALSE, comment=NA}
 sqrt(2) - exp(2)
 ```
@@ -49,4 +50,37 @@ library(magic)
 magic(6)
 ```
 
+
+La frase completa: $\sqrt{2}=$ `r sqrt(2)`
+
+El número $\pi$ empieza por `r pi`
+
+### Ejemplo de chunks combinando texto y scripts
+
+```{r prueba, results='hide', echo=FALSE}
+notas = c(5,7,3,9,4,5,1)
+media = mean(notas)
+n = length(notas)
+desv.tip = sd(notas)
+```
+
+Este año he hecho $n=$ `r n` exámenes, con una media de $\overline{x}=$ `r round(media,2)` y una desviación típica de $s=$ `r round(desv.tip,2)`.
+
+*Prueba de texto en cursiva*
+
+**Prueba de texto en negritas**
+
+Si quiero indicar un **cuadrado** ponemo nota^
+
+Si quiero usar un hipertexto [Buscador Internet](https://www.google.es)
+
+imagen ![](../../teoria/Imgs/dado.png)
+
+*** 
+
+Alumno        |   Nota
+--------------|-----------------
+Ricardo       |   5
+Monica        |   6
+Fabiola       |   7
 
