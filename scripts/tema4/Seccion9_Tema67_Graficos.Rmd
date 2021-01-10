@@ -1,0 +1,35 @@
+---
+title: "Seccion9_Tema67_Graficos"
+author: "Ricardo Marrero"
+date: "10/1/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Gráficos con la función `plot`
+
+ ```{r primer_plot, fig.cap= "Notas por alumnos", fig.align='center',echo=FALSE,}
+par(mfrow = c(1,2))
+alumnos = c(1:10)
+notas = c(2,5,7,9,8,3,5,6,10,7)
+plot(alumnos,notas)
+exponencial = 2^(1:6)
+plot(exponencial)
+par(mfrow = c(1,1))
+```
+
+```{r funcion_fibonacci, fig.cap= "Notas por alumnos", fig.align='center',echo=FALSE}
+n = 1:20
+fib = (1/sqrt(5))*((1+sqrt(5))/2)^n - (1/sqrt(5))*((1-sqrt(5))/2)^n
+fib
+plot(fib, xlab = "n", ylab = expression(F[n]), main = "Sucesión de Fibonacci",
+     pch = 19, col="powderblue")
+```
+
+
+
+
+

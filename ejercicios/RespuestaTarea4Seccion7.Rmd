@@ -1,0 +1,55 @@
+---
+title: "RespuestaTarea4Seccion7"
+author: "Ricardo Marrero"
+date: "28/12/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Instrucciones
+
+En primer lugar, debéis reproducir este documento tal cual está. Necesitaréis instalar [MiKTeX](https://miktex.org/download) y [Texmaker](http://www.xm1math.net/texmaker/).
+
+A continuación de cada pregunta, tenéis que redactar vuestras respuestas de manera correcta y argumentada, indicando qué hacéis, por qué, etc. Si se os pide utilizar instrucciones de `R`, tendréis que mostrarlas todas en chunks.
+
+El objetivo de esta tarea es que os familiaricéis con los documentos Markdown, las fórmulas en \LaTeX\   y los chunks de `R`. Y, de lo más importante, que os acostumbréis a explicar lo que hacéis en cada momento.
+
+
+# Preguntas
+
+## Pregunta 1
+
+Realizad los siguientes productos de matrices siguiente en `R`:
+
+$$A\cdot B$$
+$$B\cdot A$$
+$$(A\cdot B)^t$$
+$$B^t\cdot A$$
+$$(A\cdot B)^{-1}$$
+$$A^{-1}\cdot B^t$$
+donde
+$$A = \begin{pmatrix}1 & 2 & 3 & 4\\ 4 & 3 & 2 & 1\\ 0 & 1 & 0 & 2\\ 3 & 0 & 4 & 0\end{pmatrix}\qquad B= \begin{pmatrix}4 & 3 & 2 & 1\\ 0 & 3 & 0 & 4\\ 1 & 2 & 3 & 4\\ 0 & 1 & 0 & 2\end{pmatrix}$$
+Finalmente, escribe haciendo uso de \LaTeX\  el resultado de los dos primeros productos de forma adecuada.
+
+```{r, echo = FALSE, eval = FALSE}
+A = cbind(c(1,4,0,3),c(2,3,1,0),c(3,2,0,4),c(4,1,2,0))
+B = cbind(c(4,0,1,0),c(3,3,2,1),c(2,0,3,0),c(1,4,4,2))
+A%*%B
+B%*%A
+t(A%*%B)
+t(B)%*%A
+solve(A%*%B)
+solve(A)%*%t(B)
+C = A%*%B
+```
+
+El producto de $$A = \begin{pmatrix}1 & 2 & 3 & 4\\ 4 & 3 & 2 & 1\\ 0 & 1 & 0 & 2\\ 3 & 0 & 4 & 0\end{pmatrix} \times B= \begin{pmatrix}4 & 3 & 2 & 1\\ 0 & 3 & 0 & 4\\ 1 & 2 & 3 & 4\\ 0 & 1 & 0 & 2\end{pmatrix}$$
+es: `r C`
+
+ 
+
+
+
